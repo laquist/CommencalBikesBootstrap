@@ -26,42 +26,196 @@
         </div>
     </div>
 
+
     <!-- Menu -->
     <nav id="menu" class="navbar navbar-expand-lg navbar-light">
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarText">
-            <ul class="navbar-nav mr-auto">
-            <li class="nav-item active">
-                <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">Features</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">Pricing</a>
-            </li>
-            </ul>
-            <span class="navbar-text">
-            Navbar text with an inline element
-            </span>
+        <div class="container">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse text-uppercase" id="navbarText">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Bikes<span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Ride Alpha</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Equipment</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Components</a>
+                    </li>
+                </ul>
+    
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Blog</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Community</a>
+                    </li>
+                </ul>
+            </div>
         </div>
     </nav>
 
+
     <!-- Header IMG/Slideshow -->
-    <div class="row">
-        <div class="col-1">
-
+    <div id="headerCarousel" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+            <img class="d-block w-100" src="img/slider/1.jpg">
+            </div>
+            <div class="carousel-item">
+            <img class="d-block w-100" src="img/slider/2.jpg">
+            </div>
+            <div class="carousel-item">
+            <img class="d-block w-100" src="img/slider/3.jpg">
+            </div>
         </div>
     </div>
 
+    
     <!-- Bikes/Content -->
-    <div class="row">
-        <div class="col-4">
-
+    <section id="bikeContent" class="container text-center text-uppercase ">
+        <div class="row">
+            <div class="col-3">
+                <div class="card border-0 d-inline-block">
+                    <img class="card-img-top" src="img/Kids.jpg" alt="Model: Kids">
+                    <div class="card-body">
+                        <!-- <h4 class="card-title text-uppercase">Kids</h4> -->
+                        <p class="card-text">Kids</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-3">
+                <div class="card border-0 d-inline-block">
+                    <img class="card-img-top" src="img/XC hardtail.jpg" alt="Model: XC Hardtail">
+                    <div class="card-body">
+                        <!-- <h3 class="card-title text-uppercase">XC Hardtail</h3> -->
+                        <p class="card-text">XC Hardtail</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-3">
+                <div class="card border-0 d-inline-block">
+                    <img class="card-img-top" src="img/XC full suspension.jpg" alt="Model: XC Full Suspension">
+                    <div class="card-body">
+                        <!-- <h3 class="card-title text-uppercase">XC Full Suspension</h3> -->
+                        <p class="card-text">XC Full Suspension</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-3">
+                <div class="card border-0 d-inline-block">
+                    <img class="card-img-top" src="img/Street.jpg" alt="Model: Street">
+                    <div class="card-body">
+                        <!-- <h3 class="card-title text-uppercase">Street</h3> -->
+                        <p class="card-text">Street</p>
+                    </div>
+                </div>
+            </div>
         </div>
-    </div>
+
+        <div class="row">
+            <div class="col-3">
+                <div class="card border-0 d-inline-block">
+                    <img class="card-img-top" src="img/Downhill.jpg" alt="Model: Downhill">
+                    <div class="card-body">
+                        <!-- <h3 class="card-title text-uppercase">Downhill</h3> -->
+                        <p class="card-text">Downhill</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-3">
+                <div class="card border-0 d-inline-block">
+                    <img class="card-img-top" src="img/Enduro hardtail.jpg" alt="Model: Enduro Hardtail">
+                    <div class="card-body">
+                        <!-- <h3 class="card-title text-uppercase">Enduro Hardtail</h3> -->
+                        <p class="card-text">Enduro Hardtail</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-3">
+                <div class="card border-0 d-inline-block">
+                    <img class="card-img-top" src="img/Enduro full suspension.jpg" alt="Model: Enduro Full Suspension">
+                    <div class="card-body">
+                        <!-- <h3 class="card-title text-uppercase">Enduro Full Suspension</h3> -->
+                        <p class="card-text">Enduro Full Suspension</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-3">
+                <div class="card border-0 d-inline-block">
+                    <img class="card-img-top" src="img/City.jpg" alt="Model: City">
+                    <div class="card-body">
+                        <!-- <h3 class="card-title text-uppercase">City</h3> -->
+                        <p class="card-text">City</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- <div class="card border-0 d-inline-block" style="width: 290px;">
+            <img class="card-img-top" src="img/Kids.jpg" alt="Model: Kids">
+            <div class="card-body">
+                <h3 class="card-title text-uppercase">Kids</h3>
+            </div>
+        </div>
+
+        <div class="card border-0 d-inline-block" style="width: 290px;">
+            <img class="card-img-top" src="img/XC hardtail.jpg" alt="Model: XC Hardtail">
+            <div class="card-body">
+                <h3 class="card-title text-uppercase">XC Hardtail</h3>
+            </div>
+        </div>
+
+        <div class="card border-0 d-inline-block" style="width: 290px;">
+            <img class="card-img-top" src="img/XC full suspension.jpg" alt="Model: XC Full Suspension">
+            <div class="card-body">
+                <h3 class="card-title text-uppercase">XC Full Suspension</h3>
+            </div>
+        </div>
+
+        <div class="card border-0 d-inline-block" style="width: 290px;">
+            <img class="card-img-top" src="img/Street.jpg" alt="Model: Street">
+            <div class="card-body">
+                <h3 class="card-title text-uppercase">Street</h3>
+            </div>
+        </div>
+
+        <div class="card border-0 d-inline-block" style="width: 290px;">
+            <img class="card-img-top" src="img/Downhill.jpg" alt="Model: Downhill">
+            <div class="card-body">
+                <h3 class="card-title text-uppercase">Downhill</h3>
+            </div>
+        </div>
+
+        <div class="card border-0 d-inline-block" style="width: 290px;">
+            <img class="card-img-top" src="img/Enduro hardtail.jpg" alt="Model: Enduro Hardtail">
+            <div class="card-body">
+                <h3 class="card-title text-uppercase">Enduro Hardtail</h3>
+            </div>
+        </div>
+
+        <div class="card border-0 d-inline-block" style="width: 290px;">
+            <img class="card-img-top" src="img/Enduro full suspension.jpg" alt="Model: Enduro Full Suspension">
+            <div class="card-body">
+                <h3 class="card-title text-uppercase">Enduro Full Suspension</h3>
+            </div>
+        </div>
+
+        <div class="card border-0 d-inline-block" style="width: 290px;">
+            <img class="card-img-top" src="img/City.jpg" alt="Model: City">
+            <div class="card-body">
+                <h3 class="card-title text-uppercase">City</h3>
+            </div>
+        </div> -->
+    </section>
+
 
     <!-- Video/Content -->
     <div class="row">
@@ -69,6 +223,7 @@
 
         </div>
     </div>
+
 
     <!-- Footer -->
     <div class="row">
