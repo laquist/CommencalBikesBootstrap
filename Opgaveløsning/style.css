@@ -19,3 +19,46 @@ nav {
     padding: 30px 0px;
     font-size: 16px;
 }
+
+#content {
+    background-color: lightgrey;
+    padding: 20px 0px;
+}
+
+/* ARTICLES */
+
+#articleWrapper {
+    padding: 0px 10px;
+    box-sizing: border-box;
+}
+
+.articleHeadings {
+    text-transform: uppercase;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 19px;
+    margin: 0px;
+}
+
+article p {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    margin: 15px 0px;
+}
+
+footer {
+    background-color: #0e0c0c;
+}
+
+.footerTitle {
+    color: #ffff32;
+}
+
+footer ul {
+    color: white;
+    list-style: none;
+    padding: 0px;
+}
+
+footer ul li {
+
+}
