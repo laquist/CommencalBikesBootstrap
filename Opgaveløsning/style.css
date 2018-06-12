@@ -12,12 +12,8 @@
 /* NAV */
 
 #menu {
-    background-color: #ffff32
-}
-
-
-nav {
-    height: 50px;
+    background-color: #ffff32;
+    padding: .3rem 1rem;
 }
 
 /* CONTENT */
