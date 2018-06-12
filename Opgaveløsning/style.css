@@ -1,6 +1,4 @@
-#menu {
-    background-color: #ffff32
-}
+/* TOP + HEADER */
 
 #top {
     background-color: #0e0c0c;
@@ -11,9 +9,18 @@
     margin: 9px 0px;
 }
 
+/* NAV */
+
+#menu {
+    background-color: #ffff32
+}
+
+
 nav {
     height: 50px;
 }
+
+/* CONTENT */
 
 #bikeContent {
     padding: 30px 0px;
@@ -45,20 +52,23 @@ article p {
     margin: 15px 0px;
 }
 
+/* FOOTER */
+
 footer {
     background-color: #0e0c0c;
 }
 
 .footerTitle {
     color: #ffff32;
+    margin: 12px 0px;
 }
 
 footer ul {
-    color: white;
     list-style: none;
     padding: 0px;
 }
 
 footer ul li {
-
+    color: grey;
+    font-size: 14px;
 }
