@@ -1,7 +1,6 @@
 // Opret en klasse med tilhørende constructor og metoder, så hver cykel kan eksistere som en klasse instans (objekt) med tilhørende relevant information (pris, navn, type, billede). 
 // Der skal minimum være en instance-level metode (ikke static) som kan returnere en bestemt cykels pris. (+ metoder til at kunne gemme instanser i local storage)
 
-
 // var testBike5 = {
 // 	id:5,
 // 	name:"Test2",
@@ -16,7 +15,7 @@
 
 class Bike {
     /**
-     * 
+     * The Bike class is to create instances of different bikes, with their own values (ID, Name, Price, Type, Image)
      * @param {Object} bike Object with following properties: ID, Name, Price, Type, Image
      */
     constructor(bike) {
@@ -182,3 +181,6 @@ class Bike {
 
 // Liste/Array/Map til instanserne
 Bike.Instances = {};
+
+//Loads the data from Local Storage, when the page loads.
+window.addEventListener("onload", Bike.loadFromLocalStorage());
