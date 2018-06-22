@@ -49,25 +49,42 @@ class Bike {
         }
     };
 
-    //Skal denne være static? Eller skal den køres på selve instansen som skal updates?
     static update(updatedBike) {
-        var bike = Bike.Instances[updatedBike.id];
-        if (bike.name !== updatedBike.name) {
-            bike.name = updatedBike.name;
+        //Laver en bike med de nuværende data
+        let currentBike = Bike.Instances[updatedBike.id];
+
+        //Laver en ny bike med de (evt) nye ændringer
+        let newBike = new Bike(updatedBike);
+
+        if (JSON.stringify(newBike) !== JSON.stringify(currentBike)) {
+            Bike.Instances[updatedBike.id] = newBike;
+
+            console.log("Bike with ID: " + updatedBike.id + " has been updated");
+            Bike.saveToLocalStorage();
         }
-        if (bike.price !== updatedBike.price) {
-            bike.price = updatedBike.price;
-        }
-        if (bike.type !== updatedBike.type) {
-            bike.type = updatedBike.type;
-        }
-        if (bike.image !== updatedBike.image) {
-            bike.image = updatedBike.image;
+        else {
+            console.log("Bike with ID: " + updatedBike.id + " has not been updated, because there was no changes");
         }
 
-        console.log("Bike with ID: " + bike.id + " has been updated");
         
-        Bike.saveToLocalStorage();
+
+        // var bike = Bike.Instances[updatedBike.id];
+        // if (bike.name !== updatedBike.name) {
+        //     bike.name = updatedBike.name;
+        // }
+        // if (bike.price !== updatedBike.price) {
+        //     bike.price = updatedBike.price;
+        // }
+        // if (bike.type !== updatedBike.type) {
+        //     bike.type = updatedBike.type;
+        // }
+        // if (bike.image !== updatedBike.image) {
+        //     bike.image = updatedBike.image;
+        // }
+
+        // console.log("Bike with ID: " + bike.id + " has been updated");
+        
+        // Bike.saveToLocalStorage();
     };
     
     //Denne er dog ikke instance-level, for det giver ikke mening. Man kan bare bruge Bike1.Price, i stedet for at skulle sige Bike1.getPrice();
